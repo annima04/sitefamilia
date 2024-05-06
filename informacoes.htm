@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árvore Genealógica</title>
+  <style>
+    /* Estilos básicos para a árvore */
+    .tree {
+      display: flex;
+      justify-content: center;
+    }
+
+    .tree ul {
+      padding-left: 20px;
+    }
+
+    .tree li {
+      list-style-type: none;
+      position: relative;
+      padding-left: 1em;
+    }
+
+    .tree li::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -10px;
+      border-left: 1px solid #000;
+      height: 100%;
+    }
+
+    .tree li:first-child::before {
+      top: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="tree">
+    <ul>
+      <li>Pai
+        <ul>
+          <li>Avô Paterno
+            <ul>
+              <li>Bisavô Paterno</li>
+              <li>Bisavó Paterna</li>
+            </ul>
+          </li>
+          <li>Avó Paterna
+            <ul>
+              <li>Bisavô Materno</li>
+              <li>Bisavó Materna</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Mãe
+        <ul>
+          <li>Avô Materno
+            <ul>
+              <li>Bisavô Paterno</li>
+              <li>Bisavó Paterna</li>
+            </ul>
+          </li>
+          <li>Avó Materna
+            <ul>
+              <li>Bisavô Materno</li>
+              <li>Bisavó Materna</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
