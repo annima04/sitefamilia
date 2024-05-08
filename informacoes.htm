@@ -1,77 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Árvore Genealógica</title>
-  <style>
-    /* Estilos básicos para a árvore */
-    .tree {
-      display: flex;
-      justify-content: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore Genealógica</title>
 
-    .tree ul {
-      padding-left: 20px;
-    }
+  <P>Meus antepassados são africanos e não se tem registros da chegada deles no Brasil</P>
+<p> A família do meu pai está em Londrina desde 1994, já a família da minha mãe não tenho como saber</p>
+<P></P>
 
-    .tree li {
-      list-style-type: none;
-      position: relative;
-      padding-left: 1em;
-    }
+    <style>
+        .family {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
 
-    .tree li::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -10px;
-      border-left: 1px solid #000;
-      height: 100%;
-    }
+        .person {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .tree li:first-child::before {
-      top: 50%;
-    }
-  </style>
+        .person p {
+            margin: 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <div class="tree">
-    <ul>
-      <li>Pai
-        <ul>
-          <li>Avô Paterno
-            <ul>
-              <li>Bisavô Paterno</li>
-              <li>Bisavó Paterna</li>
-            </ul>
-          </li>
-          <li>Avó Paterna
-            <ul>
-              <li>Bisavô Materno</li>
-              <li>Bisavó Materna</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>Mãe
-        <ul>
-          <li>Avô Materno
-            <ul>
-              <li>Bisavô Paterno</li>
-              <li>Bisavó Paterna</li>
-            </ul>
-          </li>
-          <li>Avó Materna
-            <ul>
-              <li>Bisavô Materno</li>
-              <li>Bisavó Materna</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+
+<div class="family">
+    <div class="person">
+        <!-- <p>Pai</p> -->
+        <a href="pai.html" target="_blank"> Pai</a>
+    </div>
+    <div class="person">
+      <a href="mãe.html" target="_blank"> Mãe</a>
+    </div>
+</div>
+
+<div class="family">
+    <div class="person">
+        <a href="AvôMaterno.html" target="_blank"> Avô Materno </a>
+    </div>
+    <div class="person">
+        <a href="Avó Materna.html" target="_blank"> Avó Materna </a>
+    </div>
+</div>
+
+<div class="family">
+    <div class="person">
+        <a href="Avô Paterno.html" target="_blank"> Avô Paterno </a>
+    </div>
+    <div class="person">
+        <a href="Avó Paterna.html" target="_blank"> Avó Paterna </a>
+    </div>
+</div>
+
+<!-- <div class="family">
+    <div class="person">
+        <a href="pai.html" target="_blank"> Bisavô Materno </a>
+    </div>
+    <div class="person">
+        <a href="pai.html" target="_blank"> Bisavó Materna </a>
+    </div>
+</div> -->
+
 </body>
 </html>
